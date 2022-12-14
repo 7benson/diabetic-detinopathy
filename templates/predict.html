@@ -1,0 +1,62 @@
+{%extends "layout.html" %}
+{%block body%}
+        <div id="preloader">
+            <div class="jumper">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>  
+
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <a href="/" class="logo">
+                            Diabetic Retinopathy Detection
+                        </a>
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a target="_blank" href="https://docs.google.com/document/d/1_jTjszPOC534VxjpRy3iiYJQvEH1OZ9_Ghy3eewZdUI/edit#">Report Link</a></li>
+                            <li class="scroll-to-section"><a target="_blank" href="https://github.com/7benson/">GITHUB LINK</a></li>
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+          <div class="item">
+            <div class="img-fill">
+                <img src="{{backgroundImage}}" alt="">
+                <div class="text-content">
+                  <h3>Thank you for using our Diabetic Retinopathy Algorithm </h3>
+                  <img style="height: 120px;object-fit: scale-down;" src={{inputImageAddr}} />
+                  <div style="display: flex;place-content: space-evenly;">
+
+                    <img style="height: 120px;min-width : fit-content;object-fit: scale-down;" src={{extracted_exudates}} />
+                    <img style="height: 120px;min-width : fit-content;object-fit: scale-down;" src={{extracted_blood_vessels}} />
+                    
+                  </div>
+                  <a href="/" class="main-stroked-button">GO BACK</a>
+                  <a target="_blank" href="https://www.linkedin.com/in/jayanth-kumar-14a4811b5/" class="main-filled-button">CONTACT ME</a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                
+            </div>
+        </div>
+    </footer> 
+
+ {%endblock%}
